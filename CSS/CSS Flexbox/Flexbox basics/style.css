@@ -1,0 +1,46 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-container{
+	display: flex;   /*puts the boxes in a flex row*/
+	flex-direction: row;  /*column puts items in vertical manner,row is default (row-reverse reverses the items) */
+	background: #f4f4f4;
+	/*justify-content: space-between;*/  /* specifies alignment of the boxes in main axis*/
+	/*align-items: start;*/              /* specifies alignment of the boxes in cross axis */
+}
+
+.item{
+	flex: 1 0 100px;   /*flex-grow flex-shrink flex-basis*/
+	height: 100px;
+	background:#254de4;
+	color: #fff;
+	margin: 10px;
+
+	display: flex;
+	justify-content: center;     /* specifies alignment of the text in box in main axis*/
+	align-items: center;         /* specifies alignment of the text in box in cross axis*/
+}
+
+.item:nth-of-type(1){
+	/*order:2;*/       /*sets order of boxes*/
+	/*flex-grow: 2;*/      /*makes the boxes occupy the entire space(number mentions the ratio of growth by each box)*/
+    /*flex-shrink: 1;*/    /*does opposite of flex-grow*/
+}
+
+.item:nth-of-type(2){
+	/*order:1;*/
+	/*flex-basis: 200px;*/  /*gives minimum width */
+	/*flex-grow: 1;*/
+}
+
+.item:nth-of-type(3){
+	/*order:3;*/
+	/*flex-grow: 3;*/
+}

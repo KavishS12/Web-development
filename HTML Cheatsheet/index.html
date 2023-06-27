@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> HTML cheat sheet</title>
+    </head>
+
+    <body>
+        <a href="blog.html">Go to blog</a>
+        <hr>
+        <!--Headings-->
+
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+
+        <!--Paragraph-->
+
+        <p>
+           <strong> Web-Dev </strong>is one of the most fascinating and popular skills to
+learn. The beauty of it so you don't need any prior coding
+experience or a computer science degree to learn WebDev.
+Through this roadmap, we have assumed the same. You could
+be an absolute beginner and follow this roadmap.
+Two significant parts of web dev are - the front end and the
+backend. <em>In this document, we will focus on front-end
+development - i.e., coding how a website looks.</em>
+        </p>
+
+        <p>
+            To start, you need to learn the basics of <u>front-end i.e., HTML and
+CSS.</u> Once you are done with that, you can use them to design a
+basic responsive website. You are free to take inspiration or
+recreate already existing websites. The only important thing is
+that you make one on your own, as projects are the best way to
+learn development
+        </p>
+
+        <p>
+            To go to an external website <a href="http://google.com" target="_blank">this text takes to google</a> <br>
+            <em>target="_blank"</em> ensures that the link opens the external website on a new tab
+        </p>
+
+        <!--Lists-->
+
+        <ul>
+            <li>List 1</li>
+            <li>List 2</li>
+            <li>List 3</li>
+            <li>List 4</li>
+            <li>List 5</li>
+        </ul>
+
+        <ol>
+            <li>List 1</li>
+            <li>List 2</li>
+            <li>List 3</li>
+            <li>List 4</li>
+            <li>List 5</li>
+        </ol>
+
+        <!--Table-->
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Kps</td>
+                    <td>kps@gmail.com</td>
+                    <td>19</td>
+                </tr>
+                <tr>
+                    <td>Abc</td>
+                    <td>abc@gmail.com</td>
+                    <td>17</td>
+                </tr>
+                <tr>
+                    <td>Xyz</td>
+                    <td>xyz@gmail.com</td>
+                    <td>18</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <br>
+        <hr> <!--gives horizontal rule-->
+        <br>
+
+        <!--Forms-->
+
+        <form action="process.php" method="POST">
+
+            <div>
+               <label>First Name:</label>
+               <input type="text" name="firstName" value="Enter first name">
+            </div>
+
+            <br>
+
+            <div>
+               <label>Last Name:</label>
+               <input type="text" name="lastname" placeholder="Enter last name">
+            </div>
+
+            <!--placeholder attribute is prefered over value attribute-->
+
+            <br>
+
+            <div>
+               <label>Email:</label>
+               <input type="email" name="email">
+            </div>
+
+            <br>
+
+            <div>
+               <label>Message:</label>
+               <textarea name="message"></textarea>
+            </div>
+
+            <br>
+
+            <div>
+                <label>Gender:</label>
+                <select name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <br>
+
+            <div>
+                <label>Age:</label>
+                <input type="number" name="age" value="30">
+            </div>
+
+            <br>
+
+            <div>
+                <label>Birthday:</label>
+                <input type="date" name="birthday" >
+            </div>
+
+            <br>
+
+            <input type="submit" name="submit" value="submit">
+
+        </form>
+
+        <br>
+        
+        <!--Button-->
+        <button>Click Me</button> <!--Button can be used to do something using javascript-->
+
+        <br>
+
+        <!--Image-->
+        
+        <a href="sample.jpeg"> <!--this attribue is used to open image on clicking-->
+           <img src="sample.jpeg" width="200" height="150">
+        </a>
+
+        <br>
+
+        <!--Quotations-->
+
+        <blockquote cite="http://google.com">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea reprehenderit saepe reiciendis doloremque vel in maxime dolorem laudantium. Consequuntur voluptatum quasi distinctio. Cumque velit accusantium culpa aliquid. Vitae, ea. Totam.
+        </blockquote>
+
+        <p> The <abbr title="World Wide web">WWW</abbr> is awesome</p>
+
+        <p>This is <cite>HTML crash course</cite></p>
+
+    </body>
+</html>
