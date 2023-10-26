@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events information</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Campus Events for Techweek</h1>
+
+    <ul class="event-list">
+
+      <li class="events">
+        <h2>Wokshop : Face Detection using Open CV</h2>
+        <ul>
+          <li>Date: October 23, 2023</li>
+          <li>Time: 5:00 PM - 7:00 PM</li>
+          <li>Location: NLH , Room 101</li>
+          <li>Description: Learn the funadamentals of object detection and gain hands-on experience using Open CV's Python Library to automate your selfie taking process! </li>
+        </ul>
+      </li>
+
+      <li class="events">
+        <h2>Workshop : Neural Networks and Computer Networks</h2>
+        <ul>
+          <li>Date: October 24, 2023</li>
+          <li>Time: 5:00 PM - 7:00 PM</li>
+          <li>Location: NLH , Room 101</li>
+          <li>Description: Get ready to dive into Convolutional Neural Networks (CNN) and create your own computer vision project recognizing sign language using hand gestures.</li>
+        </ul>
+      </li>
+
+      <li class="events">
+        <h2>Workshop : Advanced 3D Printing</h2>
+        <ul>
+          <li>Date: July 25, 2023</li>
+          <li>Time: 5:00 PM - 7:00 PM</li>
+          <li>Location: NLH , Room 101</li>
+          <li>Description: From advanced printing techniques to the latest technologies,this workshop will equip you with the knowledge and tools needed to bring your wildest ideas to life.</li>
+        </ul>
+      </li>
+
+      <li class="events">
+        <h2>Seminar : Web 3.0</h2>
+        <ul>
+          <li>Date: July 26, 2023</li>
+          <li>Time: 3:00 PM - 5:00 PM</li>
+          <li>Location: Seminar hall</li>
+          <li>Description:  Delve into the exciting world of Web 3.0, exploring its potential, applications, and the impact it will have on various industries.</li>
+        </ul>        
+      </li>
+
+      <li class="events">
+        <h2>Movie Night</h2>
+        <ul>
+          <li>Date: July 26, 2023</li>
+          <li>Time: 8:00 PM - 11:00 PM</li>
+          <li>Location: NLH</li>
+          <li>Description: Lights, camera, action!Escape the ordinary and immerse yourself in the magic of cinema at our upcoming Movie Night. </li>
+        </ul>
+      </li>
+
+    </ul>
+
+    <button id="openPopup">Register</button>
+    <div class="overlay" id="overlay"></div>
+    <div class="popup" id="popup">
+      <div class="container2">
+        <h2>Please enter the following details:</h4>
+        <form class="my-form" target="_self">
+    
+          <div class="form-group">
+             <label>Name : </label>
+             <input type="text" name="name" placeholder="Enter your full name">
+          </div>
+    
+          <div class="form-group">
+             <label>Email : </label>
+             <input type="text" name="email" placeholder="Enter a valid email id">
+          </div>
+    
+          <div class="form-group">
+             <label>Registration Number : </label>
+             <input type="number" name="registration number" placeholder="Registration number">
+          </div>
+    
+          <div class="form-group">
+            <label>Branch : </label>
+            <input type="text" name="branch" placeholder="Enter your branch">
+         </div>
+    
+         <p>Events :</p>
+         <div class="box-1">
+    
+            <div class="row">
+              <input type="checkbox" name="openCV">
+              <label>Face Detection using Open CV wokshop</label>
+            </div>
+    
+            <div class="row">
+              <input type="checkbox" name="nncn">
+            <label>Neural Networks & Computer Networks wokshop</label>
+            </div>
+    
+            <div class="row">
+              <input type="checkbox" name="3Dprinting">
+              <label>Advanced 3D Printing wokshop</label>
+            </div>
+            
+            <div class="row">
+              <input type="checkbox" name="web3.0">
+              <label>Seminar : Web 3.0</label>
+            </div>
+            
+            <div class="row">
+              <input type="checkbox" name="movie">
+              <label>Movie Night</label>
+            </div>
+            
+         </div>
+    
+          <input class="submit_button" type="submit" name="" value="Submit">
+    
+        </form>
+      </div>  
+      <button id="closePopup">X</button>
+    </div>
+<!--javascript for popup-->
+    <script>
+        document.getElementById('openPopup').addEventListener('click', function() {
+            document.getElementById('popup').style.display = 'block';
+            document.getElementById('overlay').style.display = 'block';
+        });
+
+        document.getElementById('closePopup').addEventListener('click', function() {
+            document.getElementById('popup').style.display = 'none';
+            document.getElementById('overlay').style.display = 'none';
+        });
+    </script>
+  </div>
+</body>
+
+</html> 
