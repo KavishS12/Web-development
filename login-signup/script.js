@@ -12,4 +12,22 @@ document.addEventListener('DOMContentLoaded', function() {
         signupSpan.style.color = '#FFFFFF';
       }
     });
+
+    const toggleIcons = document.querySelectorAll('.see-password');
+    toggleIcons.forEach(toggleIcon => {
+        toggleIcon.addEventListener('click', function() {
+            const passwordInput = this.previousElementSibling;
+            //to enable password visibility only momentarily
+            /*passwordInput.type = 'text';
+            setTimeout(function() {
+              passwordInput.type = 'password';
+            },400);*/ 
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+            } else {
+                passwordInput.type = 'password';
+            }
+        });
+    });
 });
+
