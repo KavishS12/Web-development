@@ -1,25 +1,36 @@
-let display = document.getElementById("display");
+document.addEventListener("DOMContentLoaded", function() {
+    const display = document.querySelector("input[name='display']");
+    const numButtons = document.querySelectorAll(".num");
+    const opButtons = document.querySelectorAll(".op");
 
-function append(value) {
-    if (display.innerText === '') {
-        display.innerText = value;
-    } else {
-        display.innerText += value;
-    }
-}
+    numButtons.forEach(button => {
+        button.addEventListener("click", function() {
+            const value = this.value;
+            display.value += value;
+        });
+    });
 
-function del() {
-    display.innerText = display.innerText.toString().slice(0,-1);
-}
+    opButtons.forEach(button => {
+        button.addEventListener("click", function() {
+            const value = this.value;
+            if(display.value != ''){
+                display.value += value;
+            }
+        });
+    });
 
-function reset() {
-    display.innerText = '0';
-}
+    const delButton = document.querySelector(".delButton");
+    delButton.addEventListener("click", function() {
+        display.value = display.value.slice(0, -1);
+    });
 
-function calculate() {
-    try {
-        display.innerText = eval(display.innerText);
-    } catch (error) {
-        display.innerText = 'Error';
-    }
-}
+    const resetButton = document.querySelector(".resetButton");
+    resetButton.addEventListener("click", function() {
+        display.value = '';
+    });
+
+    const equalButton = document.querySelector(".equalButton");
+    equalButton.addEventListener("click", function() {
+        display.value = eval(display.value);
+    });
+});

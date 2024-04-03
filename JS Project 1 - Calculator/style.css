@@ -5,13 +5,17 @@
     box-sizing: border-box;
 }
 
+body{
+    background: hsl(0, 0%, 90%);
+}
+
 .container{
-    width: 100%;
+    margin: auto;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: hsl(0, 0%, 90%);
+
 }
 
 h1{
@@ -23,7 +27,6 @@ h1{
     justify-content: center;
     margin: 20px 0px;
     border-radius: 10px;
-    display: flex;
 }
 
 .screen input{
@@ -35,17 +38,15 @@ h1{
     height: 80px ;
     border-radius: 10px;
     border: none;
-    font-size:3em ;
-    width: 410px;
+    font-size:2rem ;
+    width: 400px;
 }
 
 .keys{
     background-color: hsl(0, 5%, 81%);
     padding: 20px;
     border-radius: 10px;
-    justify-content: center;
-    justify-self: center;
-    width: 410px;
+    width: 400px;
 }
 
 .keys input{
@@ -62,54 +63,53 @@ h1{
     margin: 8px;
 }
 
-.keys2 input{
-    width:160px;
-    height: 40px;
+.row1234{
+    display: flex;
+    justify-content: space-between;
 }
 
-.keys input.t2{
+.keys2{
+    display: flex;
+    justify-content: space-around;
+}
+
+.keys2 input{
+    width:150px;
+}
+
+input.delButton , input.resetButton{
     background-color:  hsl(185, 42%, 37%);
     color:  hsl(0, 0%, 100%);
     font-size: 1.2em;
     box-shadow: 0px 3px hsl(185, 58%, 25%);
 }
 
-.keys input.t3{
+input.equalButton{
     background-color:  hsl(25, 98%, 40%);
     color:  hsl(0, 0%, 100%);
     box-shadow: 0px 3px hsl(25, 99%, 27%);
 }
 
-@media screen and (max-width: 600px) { 
-    .container {
-        width: 100%;
+@media screen and (max-width: 480px) { 
+    .container{
+        width:350px;
     }
-
-    .form {
-        width: 100%;
-        height: 80%;
+    .screen input{
+        width:300px;
     }
-    .keys {
-        width: 100%;
-        padding:10px;
+    .keys{
+        width: 300px;
+        padding: 12px;
     }
 
     .keys input{
-        height: 22%;
-        width: 22%;
-        margin:4px  2px;
+        width:60px;
+        margin:5px;
     }
 
     .keys2 input{
-        width: 45%;
-        height: 20%;
-        margin:4px  2px;
+        width: 100px;
     }
-
-    .keys input.t2{
-        padding:6px;
-    }
-
 }
 
 
