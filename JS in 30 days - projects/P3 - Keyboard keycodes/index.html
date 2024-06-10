@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard keycodes</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .div{
+            color: rgb(43, 41, 41);
+            font-weight: 900;
+            font-size: 1.5rem;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+            padding: 20px 80px;
+            margin: 30px;
+        }
+        .green{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="div">
+        <h1>Press any keyboard key</h1>
+    </div>
+    <script>
+        document.body.addEventListener('keypress', e => {
+            document.body.innerHTML = '';
+            const code = e.keyCode;
+            const name = e.code;//can use e.keyCode as well(both give a bit different result)
+            div1 = document.createElement('div');
+            div1.className = 'div';
+            div1.innerHTML = `You pressed <span class='green'>${name}</span>`;
+            div1.style.fontSize = '3rem';
+            document.body.appendChild(div1);
+
+            div2 = document.createElement('div');
+            div2.className = 'div';
+            div2.textContent = code;
+            div2.style.color = 'green'
+            div2.style.fontSize = '5rem';
+            document.body.appendChild(div2);
+        })
+    </script>
+</body>
+</html>

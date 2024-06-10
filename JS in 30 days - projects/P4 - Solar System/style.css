@@ -1,0 +1,99 @@
+body{
+    background-image: url('images/galaxy.gif');
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    color: aliceblue;
+    font-weight: 400;
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 0.5px 0.5px 0 rgb(132, 147, 160),1px 1px 0 rgb(191, 196, 200),2px 2px 0 rgb(205, 214, 222);
+}
+
+.inp{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+#mass {
+    padding: 8px;
+    width: 250px;
+    font-size: 1rem;
+}
+
+#drop-down{
+    padding: 8px;
+    font-size: 1rem;
+    background-color: rgb(234, 234, 234);
+    font-weight: 400;
+    width: 180px;
+}
+
+.calcBtn{
+    width: 150px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: gray;
+    color: whitesmoke;
+    font-weight: 500;
+}
+
+.flex-container{
+    margin: auto;
+    padding: 50px;
+    margin-top: 50px;
+    background-color: rgba(154, 147, 147, 0.2);
+    width: 1100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.no-planet {
+    background-color: rgba(243, 243, 243, 0.2);
+    color: white;
+    padding: 50px 200px;
+    margin: auto;
+    font-size: 1.5rem;
+
+}
+
+.flex-item-image img{
+    width: 80%;
+    height: 80%;
+}
+
+.flex-item-description{
+    background-color: rgba(243, 243, 243, 0.2);
+    color: white;
+    width: 600px;
+    height: 250px;
+}
+
+.desc-text{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 25px;
+    text-align: center;
+}
+
+.desc-wt{
+    width: 150px; 
+    height: 130px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color: rgba(239, 230, 230, 0.2);
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 50%;
+}
+
+.bold{
+    font-weight: bold;
+}
